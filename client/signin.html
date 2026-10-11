@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>URL Shortener</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="auth-bar">
+            <a href="/static/"
+                ><img class="home-logo" src="./assets/go.png"
+            /></a>
+        </div>
+        <div class="auth-pages">
+            <div class="auth-container">
+                <div id="login-form">
+                    <h1>Sign in</h1>
+                    <div id="login-error" class="error-message"></div>
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <label for="login-email">Email</label>
+                            <input
+                                class="auth-input"
+                                type="email"
+                                id="login-email"
+                                name="email"
+                                placeholder="Email"
+                                required
+                            />
+                        </div>
+                        <div class="form-group">
+                            <labels for="login-password">Password</labels>
+                            <input
+                                class="auth-input"
+                                type="password"
+                                id="login-password"
+                                name="password"
+                                placeholder="Password"
+                                required
+                            />
+                        </div>
+                        <button class="auth-btn" type="submit">Login</button>
+                    </form>
+                    <div class="toggle-form">
+                        Don't have an account?
+                        <a id="show-register">Sign up!</a>
+                    </div>
+                </div>
+                <div id="register-form" style="display: none">
+                    <h1>Sign up</h1>
+                    <div id="register-error" class="error-message"></div>
+                    <form id="registerForm">
+                        <div class="form-group">
+                            <label for="register-email">Email</label>
+                            <input
+                                class="auth-input"
+                                type="email"
+                                id="register-email"
+                                name="email"
+                                placeholder="Email"
+                                required
+                            />
+                        </div>
+                        <div class="form-group">
+                            <label for="register-password">Password</label>
+                            <input
+                                class="auth-input"
+                                type="password"
+                                id="register-password"
+                                name="password"
+                                placeholder="Create password"
+                                required
+                            />
+                        </div>
+                        <div class="form-group">
+                            <label for="register-confirm-password"
+                                >Confirm Password</label
+                            >
+                            <input
+                                class="auth-input"
+                                type="password"
+                                id="register-confirm-password"
+                                name="confirmPassword"
+                                placeholder="Confirm password"
+                                required
+                            />
+                        </div>
+                        <button class="auth-btn" type="submit">Register</button>
+                    </form>
+                    <div class="toggle-form">
+                        Already have an account?
+                        <a id="show-login">Sign in!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="auth.js"></script>
+    </body>
+</html>

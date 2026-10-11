@@ -1,0 +1,11 @@
+url-shortener
+urls.db
+*.db
+*.db-journal
+*.exe
+*.test
+*.out
+.env
+.vscode/
+./idea
+.DS_Store

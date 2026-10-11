@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>URL Shortener</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="top-bar">
+            <a href="#"
+                ><img class="home-logo" src="./assets/go.png" alt="goshort"
+            /></a>
+            <div class="dropdown">
+                <a href="./signin.html">
+                    <img
+                        class="user-menu"
+                        src="./assets/user.png"
+                        alt="user menu"
+                    />
+                </a>
+                <div class="dropdown-menu">
+                    <a href="./signin.html">Sign In</a>
+                    <a href="#" id="logout-btn">Logout</a>
+                </div>
+            </div>
+        </div>
+        <div class="app-container">
+            <div class="main-container">
+                <h1>URL Shortener</h1>
+                <div id="auth-required" style="display: none">
+                    <form id="urlForm" method="POST">
+                        <div class="form-wrapper">
+                            <input
+                                type="text"
+                                name="url"
+                                placeholder="https://www.example.com"
+                            />
+                            <input type="submit" value="Submit" />
+                        </div>
+                    </form>
+                    <div id="result"></div>
+                    <div id="urlsList"></div>
+                </div>
+                <div id="please-login" style="display: block">
+                    <p>
+                        Please <a href="./signin.html">login</a> to shorten and
+                        view your URLs.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
